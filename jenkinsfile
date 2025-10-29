@@ -38,7 +38,7 @@ pipeline {
 
         stage('SonarQube Analysis') {
             steps {
-                withSonarQubeEnv(credentialsId: 'akhil-sonar', installationName: 'akhil-sonarqube') {
+                withSonarQubeEnv(credentialsId: 'akhil-sonar', installationName: 'ak-sq') {
                     sh '''#!/bin/bash
                         set -eux
                         echo "=== SonarQube installation ==="
